@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar and Walker - Our Cats</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 900px;
+            width: 100%;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+            font-size: 3em;
+        }
+        
+        .cats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .cat {
+            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .cat:hover {
+            transform: translateY(-5px);
+        }
+        
+        .cat.oscar {
+            border-left: 5px solid #000;
+        }
+        
+        .cat.walker {
+            border-left: 5px solid #ff8c00;
+        }
+        
+        .cat h2 {
+            margin: 15px 0;
+            font-size: 2em;
+        }
+        
+        .cat.oscar h2 {
+            color: #000;
+        }
+        
+        .cat.walker h2 {
+            color: #ff8c00;
+        }
+        
+        .cat p {
+            color: #666;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+        
+        .cat-emoji {
+            font-size: 4em;
+            margin: 10px 0;
+        }
+        
+        .footer {
+            text-align: center;
+            color: #999;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .cats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cats Oscar and Walker</h1>
+        
+        <div class="cats-grid">
+            <div class="cat oscar">
+                <div class="cat-emoji">Black Cat</div>
+                <h2>Oscar</h2>
+                <p><strong>The Black Beauty</strong></p>
+                <p>Oscar is our mysterious and elegant black cat. With sleek fur and piercing eyes, he is a master of the art of relaxation. Oscar loves quiet moments, cozy spots, and surveying his domain from high places.</p>
+                <p><strong>Favorite Activities:</strong> Napping, window watching, and the occasional midnight adventures.</p>
+            </div>
+            
+            <div class="cat walker">
+                <div class="cat-emoji">Orange Cat</div>
+                <h2>Walker</h2>
+                <p><strong>The Orange Adventurer</strong></p>
+                <p>Walker is our vibrant, energetic orange cat who brings joy and chaos to our home in equal measure. With boundless energy and endless curiosity, Walker is always ready for the next adventure or game.</p>
+                <p><strong>Favorite Activities:</strong> Playing with toys, exploring, and demanding attention with adorable meows.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Made with love for Oscar and Walker</p>
+        </div>
+    </div>
+</body>
+</html>
